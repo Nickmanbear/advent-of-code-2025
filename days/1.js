@@ -1,14 +1,14 @@
 const fs = require('fs');
 
-fs.readFile( __dirname + '/inputs/1.txt', function (err, data) {
+fs.readFile( __dirname + '/inputs/1-test2.txt', function (err, data) {
     if (err) {
         throw err;
     }
 
     const input = data.toString().split('\n').map(line => ({dir: line[0], amount: parseInt(line.slice(1))}));
 
-    // console.log(a2(input));
-    console.log(b(input));
+    console.log(a2(input));
+    // console.log(b(input));
 });
 
 function a(input) {
