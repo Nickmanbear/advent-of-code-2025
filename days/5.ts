@@ -14,7 +14,6 @@ function a(input: string[][]) {
 
 function b(input: string[][]) {
     let freshRanges = input[0].map(line => line.split('-').map(num => parseInt(num))).toSorted((a, b) => a[0] - b[0]);
-    const rangesLowestStartFirst = freshRanges.toSorted((a, b) => a[0] - b[0]);
 
     let totalFresh = 0;
     let idCursor = 0;
